@@ -1,36 +1,20 @@
 <!DOCTYPE html>
 <html>
+    <link rel="stylesheet" href="index.css">
     <head>
         <title>Contador</title>
-        <style>
-            body{
-                background: blueviolet;
-                color: rgb(255, 255, 255, .8);
-                font-family: Arial, Helvetica, sans-serif;
-                text-align: center;
-            }
-            #numero{
-                background: #595386;
-                width: 200px;
-                margin: 50px auto;
-                font-size: 180px;
-            }
-            button{
-                width: 100px;
-                font-size: 50px;
-                cursor: pointer;
-                background: #4873a6;
-                color: white;
-            }
-            button:hover{
-                background: #40c9c5;
-            }
-            </style>
+     
               <script>
                 function zero(){
                     console.log("clicou em zero...")
                     // voltar ao valor 0 
                     var numero = parseInt(document.getElementById("numero").innerText)
+
+                    numero = 0
+
+                     // colocar o novo valor na tela
+                     document.getElementById("numero").innerText = numero;
+                }
 
                 function mais(){
                     console.log("clicou em mais...")
@@ -41,7 +25,7 @@
                     numero++
 
                     // colocar o novo valor na tela
-                    document.getElementById("numero").innerText)
+                    document.getElementById("numero").innerText = numero;
                 }
                 function menos(){
                     console.log("clicou em menos...")
@@ -62,9 +46,9 @@
                 0
                 </div>
                 <div>
-                    <button onclick="menos">-</button>
-                    <button onclick="mais">+</button>
-                    <button onclick="zero">0</button>
+                    <button onclick="menos()">-</button>
+                    <button onclick="mais()">+</button>
+                    <button onclick="zero()">0</button>
                     </div>
                   
                         </body>
