@@ -26,6 +26,35 @@
                 background: #40c9c5;
             }
             </style>
+              <script>
+                function zero(){
+                    console.log("clicou em zero...")
+                    // voltar ao valor 0 
+                    var numero = parseInt(document.getElementById("numero").innerText)
+
+                function mais(){
+                    console.log("clicou em mais...")
+                    // pegar o valor atual
+                    var numero = parseInt(document.getElementById("numero").innerText)
+
+                    // somar +1 ao valor
+                    numero++
+
+                    // colocar o novo valor na tela
+                    document.getElementById("numero").innerText)
+                }
+                function menos(){
+                    console.log("clicou em menos...")
+                    // pegar o valor atual
+                    var numero = parseInt(document.getElementById("numero").innerText)
+
+                    // subtrair 1 ao valor
+                    numero--
+
+                    // colocar o novo valor na tela
+                    document.getElementById("numero").innerText = numero
+                }
+                </script>
             </head>
         <body>
             <h1>Contador</h1>
@@ -33,13 +62,10 @@
                 0
                 </div>
                 <div>
-                    <button onclick="menos()">-</button>
-                    <button onclick="mais()">+</button>
-                    <button onclick="zero()">0</button>
+                    <button onclick="menos">-</button>
+                    <button onclick="mais">+</button>
+                    <button onclick="zero">0</button>
                     </div>
-                    <script>
-                        function mais(){
-                            console.log("clicou em mais...")
-                            // pegar o valor atual
-                            var numero = parseInt(document.getElementById("numero").innerText)
-                        }
+                  
+                        </body>
+                        </html>
